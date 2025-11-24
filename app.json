@@ -1,65 +1,65 @@
-{
-  "expo": {
-    "name": "EstudarJuntos",
-    "slug": "EstudarJuntos",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "scheme": "estudarjuntos",
-    "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
-    "backgroundColor": "#FFFFFF",
-    "icon": "./assets/images/icon.png",
-    "splash": {
-      "image": "./assets/images/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "ios": {
-      "supportsTablet": true,
-      "backgroundColor": "#FFFFFF"
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+  {
+    "expo": {
+      "name": "EstudarJuntos",
+      "slug": "EstudarJuntos",
+      "version": "1.0.0",
+      "orientation": "portrait",
+      "scheme": "estudarjuntos",
+      "userInterfaceStyle": "automatic",
+      "newArchEnabled": true,
+      "backgroundColor": "#FFFFFF",
+      "splash": {
+        "resizeMode": "contain",
+        "backgroundColor": "#ffffff"
+      },
+      "ios": {
+        "supportsTablet": true,
         "backgroundColor": "#FFFFFF"
       },
-      "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false,
-      "backgroundColor": "#FFFFFF",
-      "navigationBar": {
-        "visible": true,
-        "barStyle": "dark-content",
-        "backgroundColor": "#00000000"
-      }
-    },
-    "web": {
-      "output": "static",
-      "backgroundColor": "#FFFFFF"
-    },
-    "plugins": [
-      [
-        "expo-router",
-        {
-          "root": "./app/"
+      "android": {
+        "permissions": [
+          "ACCESS_FINE_LOCATION",
+          "ACCESS_COARSE_LOCATION"
+        ],
+        "adaptiveIcon": {
+          "backgroundColor": "#FFFFFF"
+        },
+        "edgeToEdgeEnabled": true,
+        "predictiveBackGestureEnabled": false,
+        "backgroundColor": "#FFFFFF",
+        "navigationBar": {
+          "visible": true,
+          "barStyle": "dark-content",
+          "backgroundColor": "#00000000"
         }
-      ],
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff",
-          "dark": {
-            "backgroundColor": "#000000"
+      },
+      "web": {
+        "output": "static",
+        "backgroundColor": "#FFFFFF"
+      },
+      "plugins": [
+        [
+          "expo-router",
+          {
+            "root": "./app/"
           }
-        }
+        ],
+        [
+          "expo-splash-screen",
+          {
+            "imageWidth": 200,
+            "resizeMode": "contain",
+            "backgroundColor": "#ffffff",
+            "dark": {
+              "backgroundColor": "#000000"
+            }
+          }
+        ],
+        "expo-font"
       ],
-      "expo-font"
-    ],
-    "experiments": {
-      "typedRoutes": true,
-      "reactCompiler": true
+      "experiments": {
+        "typedRoutes": true,
+        "reactCompiler": true
+      }
     }
   }
-}
