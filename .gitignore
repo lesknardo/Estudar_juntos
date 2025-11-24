@@ -65,3 +65,5 @@ buck-out/
 
 expo-env.d.ts
 # @end expo-cli
+
+backend/books.db
